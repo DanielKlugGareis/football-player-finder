@@ -1,0 +1,44 @@
+html {
+  font-size: 12px;
+} 
+
+.filter-container{
+  margin-top: 5px;  
+}
+
+.box{
+  padding: 1.5em 1em 1em;
+  border: 1px solid #d8d8d8;
+  margin: 1.5rem 0 0;
+}
+
+.button-search{
+  margin-right: 20px;
+}
+
+.error{
+  color:red;
+}
+
+.table-container{
+  height: 450px;
+  overflow-y: scroll;
+}
+
+tr {
+  width: 100%;
+  display: inline-table;
+  height:60px;
+  table-layout: fixed;    
+}
+  
+table{
+   height:450px;
+}
+
+tbody{
+    overflow-y: scroll;
+    height: 387px;
+    width: 98%;
+    position: absolute;
+}

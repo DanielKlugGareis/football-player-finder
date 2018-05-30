@@ -1,0 +1,1 @@
+export { default as Filters } from './components/filtersContainer'
