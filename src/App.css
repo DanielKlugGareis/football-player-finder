@@ -11,9 +11,15 @@ html {
   border: 1px solid #d8d8d8;
   margin: 1.5rem 0 0;
 }
-
+ 
 .button-search{
-  margin-right: 20px;
+  /* margin-right: 20px; */
+}
+
+.buttons-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .error{

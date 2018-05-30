@@ -7,7 +7,7 @@ const Filters = props => (
     <Container fluid={true}>
         <Row className="box">
             <Col>
-                <InputFilter name="name" pattern="[a-zA-Z]+" onChange={props.setFiltersName} selected={props.filtersName} />
+                <InputFilter name="name" pattern="[a-zA-Z\s]+" onChange={props.setFiltersName} selected={props.filtersName} />
             </Col>
             <Col>
                 <SelectCombo onChange={props.setFiltersPosition} selected={props.filtersPosition} />
@@ -15,7 +15,7 @@ const Filters = props => (
             <Col>
                 <InputFilter name="age" pattern="1[8-9]|2[0-9]|3[0-9]|40" onChange={props.setFiltersAge} selected={props.filtersAge} />
             </Col>
-            <Col className="justify-content-center align-self-center text-center">
+            <Col className="buttons-container">
                 <Button color="primary" className="button-search" onClick={() => {
                     if (props.filtersAge || props.filtersPosition || props.filtersName) {
                         props.setSearching(true)
